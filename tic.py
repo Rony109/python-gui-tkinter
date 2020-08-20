@@ -1,3 +1,8 @@
+
+# Author : Rohan Nirmal
+# Tic TaC toe Game
+# generally people will choose an approach where they use buttons but i have gone with a different approach.
+
 from tkinter import *
 root = Tk()
 root.title("Tic Tac Toe")
