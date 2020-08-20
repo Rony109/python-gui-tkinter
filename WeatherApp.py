@@ -1,4 +1,8 @@
-#api.openweathermap.org/data/2.5/weather?q={surat}&appid={1e444ba8b9ce8dfbeb54c04530302
+# Author : Rohan Nirmal
+# Here we need an api to read files from website.
+# GO to any of the weather website and read the documentation.( Here i have used api from the website : Open Weather Map  )
+# create an account an apply for free api.
+#use your free api to read values related to weather
 from tkinter import *
 import requests
 import json
@@ -10,8 +14,6 @@ root.geometry("400x200")
 root.iconbitmap("E:/python/gui/Weather.ico")
 mylabel = Label(root, text=" Live Weather updates !",font=("Arial Black",15),bg="#ff4d4d",fg="white")
 mylabel.pack()
-#data = Label(root, text=api.get()).grid(row=1,Ccolumn=0)
-#/book/5cf5805fb53e011a64671582
 frame1 = Frame(root,width=400,height=50)
 frame1.config(bg="#537cf5")
 frame1.pack(padx=10,pady=10)
@@ -30,7 +32,7 @@ def show(c):
 		#city = ["Andhra Pradesh","Arunachal Pradesh ","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Andaman and Nicobar","Chandigarh","Dadra and Nagar Haveli","Daman and Diu","Lakshadweep","National Capital Territory of Delhi","Puducherry"]
 		country = "ind"
 		api = ''
-		api_request = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+c+","+country+"&APPID=1e444ba8b9ce8dfbeb54c045303027de")
+		api_request = requests.get("https://api.openweathermap.org/data/2.5/weather?q="+c+","+country+"&APPID="##__YOUR__API__ID__##"")
 		api = json.loads(api_request.content)
 	except Exception as e:
 		api = "Error"
