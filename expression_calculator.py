@@ -1,3 +1,5 @@
+#Rohan Nirmal
+#this is an expression calculator where we type an mathematical expression and we get the answer.
 from tkinter import *
 root = Tk()
 root.title("Expression's Calculator")
