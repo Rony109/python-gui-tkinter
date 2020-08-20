@@ -1,3 +1,5 @@
+# Rohan Nirmal
+#This is an Image viewer which reads images from a folder and display in the ui.
 from tkinter import *
 from PIL import Image, ImageTk
 
